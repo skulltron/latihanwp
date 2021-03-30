@@ -39,6 +39,10 @@ h1,h2,h3,h4,h5,h6,
   font-family: "Varela Round", sans-serif;
 }
 
+.site-description{
+  color: #fff;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -48,7 +52,7 @@ h2 {
 }
 
 a {
-  color: #494329;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -100,7 +104,7 @@ footer.site-footer {
 .main-navigation li.current-menu-item>a,
 .main-navigation li.current-page-parent>a {
   font-weight: bold;
-  color: #494329;
+  text-decoration: underline;
 }
 
 .main-navigation li ul {
@@ -122,7 +126,7 @@ footer.site-footer {
 }
 
 #content {
-  background: #1f1f1f;
+  background: #fff;
   margin: 20px auto;
   padding: 20px;
   width: 80%;
