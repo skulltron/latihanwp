@@ -4,21 +4,43 @@
 
         <main id="main" class="site-main" role="main">
 
+            <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
+
             <article id="post-<?php the_ID(); ?>" <?php post_class();?>>
             
                 <header class="entry-header">
 
-                    <h1>index.euy</h1>
+                    <?php the_title( '<h1>', '</h1>')?>
+                    
+                </header>
+
+                <div class="entry-content">
+                
+                    <?php the_content()?>
+
+                </div>
+            
+            </article>
+
+            <?php endwhile; else : ?>
+
+            <article id="post-<?php the_ID(); ?>" <?php post_class();?>>
+            
+                <header class="entry-header">
+
+                    <h1><?php esc_html_e( '404 Not Found', 'wphierarchy' ); ?></h1>
                         
                 </header>
 
                 <div class="entry-content">
                 
-                    <p>main content goes here.</p>
+                    <p><?php esc_html_e( 'Are you lost ?', 'wphierarchy' ); ?></p>
 
                 </div>
             
             </article>
+
+            <?php endif?>
 
         </main>
 
