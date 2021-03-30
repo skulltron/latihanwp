@@ -24,4 +24,20 @@
     register_nav_menus( [
         'main-menu' => esc_html__( 'Main Menu Lele', 'wp-hierarchy' ),
     ]);
+
+    //Setup Widget Areas
+    function wphierarchy_widgets_init(){
+        register_sidebar( [
+            'name'          => esc_html( 'Main Sidebar', 'wphierarchy' ),
+            'id'            => 'main-sidebar',
+            'description'   => esc_html( 'Add widgets for main sidebar here', 'wphierarchy' ),
+            'before-widget' => '<section class="widget">',
+            'after-widget'  => '</section>',
+            'before-title'  => '<h2 class="widget-title">',
+            'after-title'   => '</h2>'
+
+        ] );
+    }
+    add_action( 'widgets_init', 'wphierarchy_widgets_init' );
+
 ?>

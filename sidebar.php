@@ -1,5 +1,12 @@
+<?php
+// check if widget have been set up in functions.php
+if ( ! is_active_sidebar( 'main-sidebar' ) ) {
+    return;
+}
+?>
+
 <aside id="secondary" class="widget-area" role="complementary">
 
-    <h2 class="sidebar-title">Practice Areas</h2>
+    <?php dynamic_sidebar( 'main-sidebar' ); ?>
 
 </aside>

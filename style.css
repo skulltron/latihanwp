@@ -56,6 +56,12 @@ a {
   text-decoration: none;
 }
 
+#content a {
+  color: blue;
+  text-decoration: none;
+}
+
+
 pre {
   background: #222;
   padding: 10px;
@@ -205,6 +211,8 @@ article.post {
   border-color: #777;
 }
 
+/* SIDEBAR */
+
 #secondary {
   width: 25%;
   float: right;
@@ -212,6 +220,14 @@ article.post {
 
 #secondary h2 {
   font-size: 1.2rem;
+}
+
+.widget-area>li{
+  list-style: none;
+}
+
+.widget-area li ul li{
+  margin-bottom: 10px;
 }
 
 .byline {
