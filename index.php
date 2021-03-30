@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
     <div id="primary" class="content-area">
 
@@ -23,5 +23,7 @@
         </main>
 
     </div>
+    
+    <?php get_sidebar(); ?>
 
-<?php get_footer() ?>
+<?php get_footer(); ?>
