@@ -232,12 +232,12 @@ article.post {
 
 .byline {
   color: #777;
-  text-decoration: underline;
   display: inline-block;
 }
 
 .byline a:hover {
   color: #564A71;
+  text-decoration: underline;
 }
 
 .author-bio {
