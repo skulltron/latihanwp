@@ -1,12 +1,16 @@
     </div> <!--#content-->
     
-    <div class="footer-container">
-        <div class="footer-content"><p>This is Kaki</p></div>
-    </div>
-    
-    <?php wp_footer(); ?>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        
+        <a href="<?php esc_url( __( 'https://wordpress.org', 'wphierarchy' ) );?>">
+            <?php printf( esc_html__( 'Proudly powered by %s', 'wphierarchy' ), 'WordPress' );?>
+        </a>
+
+    </footer>
 
     </div> <!--#page-->
     
+    <?php wp_footer(); ?>
+
     </body>
 </html>

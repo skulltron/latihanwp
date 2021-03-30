@@ -1,8 +1,12 @@
-    <div class="footer-container">
-        <div class="footer-content"><p>This is Kaki Mendarat</p></div>
-    </div>
+            <div class="notice">
+                <p>Landing footer</p>
+            </div>
+    
+        </div> <!--#content-->
+
+    </div> <!--#page-->
     
     <?php wp_footer(); ?>
-    
+
     </body>
 </html>
