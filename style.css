@@ -311,3 +311,13 @@ blockquote.right {
   width: 33%;
   float: right;
 }
+
+/* Comments
+--------------------------------------------- */
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
