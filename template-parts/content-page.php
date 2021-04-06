@@ -2,6 +2,8 @@
             
                 <header class="entry-header">
 
+                <?php echo get_post_format( $post->ID ); ?>
+
                     <?php the_title( '<h1>', '</h1>'); ?>
                     
                 </header>
