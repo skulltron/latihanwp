@@ -14,7 +14,7 @@
 
             <?php endif?>
 
-            <p>Template : index.euy</p>
+            <p>Template : singular.euy</p>
 
         </main>
 
